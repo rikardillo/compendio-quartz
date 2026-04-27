@@ -150,6 +150,13 @@ button.desktop-explorer {
   .folder-outer.open {
     visibility: visible;
     grid-template-rows: 1fr;
+
+    a {
+      display: block;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
   }
 
   .folder-outer > ul {

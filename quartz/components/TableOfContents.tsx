@@ -61,7 +61,16 @@ export default ((opts?: Partial<Options>) => {
         >
           {fileData.toc.map((tocEntry) => (
             <li key={tocEntry.slug} class={`depth-${tocEntry.depth}`}>
-              <a href={`#${tocEntry.slug}`} data-for={tocEntry.slug}>
+              <a
+                href={`#${tocEntry.slug}`}
+                data-for={tocEntry.slug}
+                style={{
+                  display: "block",
+                  textOverflow: "ellipsis",
+                  overflow: "hidden",
+                  whiteSpace: "nowrap",
+                }}
+              >
                 {tocEntry.text}
               </a>
             </li>
