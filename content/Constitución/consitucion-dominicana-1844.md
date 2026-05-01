@@ -1,3 +1,6 @@
+---
+title: Constitución de la República Dominicana
+---
 # Constitución de la República Dominicana
 
 Votada y Proclamada por la Asamblea Nacional en fecha trece (13) de junio de 2015
