@@ -1,328 +1,186 @@
-## SECRETARÍA DE ESTADO DE MEDIO AMBIENTE  Y RECURSOS NATURALES 
+ SECRETARÍA DE ESTADO DE MEDIO AMBIENTE Y RECURSOS NATURALES 
 
-NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS
-segun la [[ley-020-00|ley 20-00]]
+# NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS
+
 SANTO DOMINGO, REPÚBLICA DOMINICANA JUNIO 2003 
 
-NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y  CONTROL DE DESCARGAS 
+**Dirección General:** 
 
-Dirección General: 
-
-Dr. Frank Moya Pons 
-
+**Dr. Frank Moya Pons** 
 Secretario de Estado de Medio Ambiente y Recursos Naturales 
 
-René Ledesma, Ph.D 
-
+**René Ledesma, Ph.D** 
 Sub-Secretario de Gestión Ambiental 
 
-Coordinación de la Revisión: 
-
+**Coordinación de la Revisión:** 
 Indhira De Jesús, MSc 
 
-Coordinación de la Redacción Original: Natasha Pérez Sánchez, MSc 
+**Coordinación de la Redacción Original:**
+Natasha Pérez Sánchez, MSc 
 
-Soporte Técnico: 
+**Soporte Técnico:** 
 
 Ing. Rafael Veloz 
-
 Lic. Gladys Rosado 
-
 Ing. Fernando Cabrera, Ph.D 
 
 Equipo Técnico: 
 
 Ing. Miguel Espinosa 
-
 Ing. Porfirio Ortega 
-
 Lic. José Andrés Rodríguez 
-
 Ing. Guarocuya González 
-
 Lic. Elsa Ferreras 
-
 Lic. Yeny Cornelio 
-
 Lic. Roberto Vargas 
-
 Lic. Nancy Valdez 
-
 Ing. Vanessa Arnal 
-
 Ing. Magda Llenas 
 
-Esta Norma es el resultado de un proceso de consulta en el que han participado numerosas instituciones, orga nizaciones no gubernamentales, representantes de em presas, universidades y especialistas en el área. A todos debemos nuestro reconocimiento y agradecimiento, en especial al apoyo recibido por la Agencia de los Estados Unidos para el Desarrollo Internacional y la Junta de Ca lidad Ambiental del Gobierno de Puerto Rico.
-
-NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS
-
-ÍNDICE 
-
-LISTA DE SÍMBOLOS Y ABREVIATURAS . . . . . . . . . .7 
-
-1. OBJETIVOS Y ALCANCE . . . . . . . . . . . . . . . . . . . . . .9 2. DEFINICIONES . . . . . . . . . . . . . . . . . . . . . . . . . . . . .10 3. ESTÁNDARES DE CALIDAD DE CUERPOS 
-
-HÍDRICOS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .16 3.1. Clasificación de los Cuerpos Hídricos . . . . . .16 3.2. Parámetros de Calidad del Agua por Clase . .18 
-
-4. CONTROL DE DESCARGAS A CUERPOS HÍDRICOS RECEPTORES . . . . . . . . . . . . . . . . . . . . .21 4.1. Descargas de Agua Residual Municipal. . . . .22 4.2. Descargas de Agua Residual Industrial . . . . .24 
-
-5. DISPOSICIONES GENERALES Y FINALES . . . . . .39 5.1. Establecimiento de cargas másicas 
-
-de contaminantes permisibles por fuente 
-
-generadora de descargas y por cuenca . . . . . .39 5.2. Otras Medidas de Control . . . . . . . . . . . . . . . .40 
-
-ANEXO . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .44 
-
-NORMA AMBIENTAL 
-
-SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS 
-
-NA-AG-001-03 
-
-(Sustituye a la AG-CC-01)
+Esta Norma es el resultado de un proceso de consulta en el que han participado numerosas instituciones, organizaciones no gubernamentales, representantes de em presas, universidades y especialistas en el área. A todos debemos nuestro reconocimiento y agradecimiento, en especial al apoyo recibido por la Agencia de los Estados Unidos para el Desarrollo Internacional y la Junta de Calidad Ambiental del Gobierno de Puerto Rico.
 
 NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS 
+NA-AG-001-03 
+(Sustituye a la AG-CC-01)
+
 
 LISTA DE SÍMBOLOS Y ABREVIATURAS 
 
-AOX Orgánicos halogenados adsorbibles (adsorbable organic halides) 
-
-% sat. Porcentaje de un compuesto en rela ción a la concentración de saturación 
-
-Bq/L Becquerel por litro. 
-
-CN Condiciones naturales 
-
-C.T. Coliformes totales 
-
-Cr6+ Cromo hexavalente 
-
-DBO5 Demanda bioquímica de oxígeno a cinco días y 20°C. 
-
-DQO Demanda química de oxígeno ∆T Incremento o reducción de tempera tura experimentado en el cuerpo re 
-
-ceptor luego de que el vertido se ha 
-
-ya mezclado con este. Cuando este 
-
-punto no esté definido en un río, se 
-
-medirá 100 m aguas abajo del punto 
-
-de descarga. 
-
-Hab.-equiv. Habitantes equivalentes 
-
-kg Kilogramo 
-
-L Litro 
-
-m Metro 
-
-mg/L miligramos por litro 
-
-N-NH3 Nitrógeno amoniacal 
-
-NMP/100 ml Número más probable en 100 ml 7  
-
-SECRETARÍA DE ESTADO DE MEDIO AMBIENTE Y RECURSOS NATURALES
-
-N-NO2 Nitrógeno de nitritos 
-
-N-NO3 Nitrógeno de nitratos 
-
-Ntot Nitrógeno total 
-
-oC Grados centígrados 
-
-PAH Hidrocarburos aromáticos polinucleares P-PO4 Fósforo de fosfatos 
-
-Ptot Fósforo total 
-
-ppm Partes por millón, en soluciones acuosas diluidas equivale a 1 mg/L 
-
-SS Sólidos en suspensión  
-
-Ton Tonelada métrica 
-
-Unidades Pt-CoUnidad de la escala platino-cobalto para el color 
-
-µg/L Microgramos por litro 
-
-µS/cm Microsimiens por centímetro 8   
-
-NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS 
-
+| Simbolo        | Abreviatura                                                                                                                                                                                                                                                  |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| AOX            | Orgánicos halogenados adsorbibles (adsorbable organic halides)                                                                                                                                                                                               |
+| % sat.         | Porcentaje de un compuesto en rela ción a la concentración de saturación                                                                                                                                                                                     |
+| Bq/L           | Becquerel por litro.                                                                                                                                                                                                                                         |
+| CN             | Condiciones naturales                                                                                                                                                                                                                                        |
+| C.T.           | Coliformes totales                                                                                                                                                                                                                                           |
+| Cr6+           | Cromo hexavalente                                                                                                                                                                                                                                            |
+| DBO5           | Demanda bioquímica de oxígeno a cinco días y 20°C.                                                                                                                                                                                                           |
+| DQO            | Demanda química de oxígeno ∆T Incremento o reducción de temperatura experimentado en el cuerpo receptor luego de que el vertido se ha ya mezclado con este. Cuando este punto no esté definido en un río, se medirá 100 m aguas abajo del punto de descarga. |
+| Hab.-equiv.    | Habitantes equivalentes                                                                                                                                                                                                                                      |
+| kg             | Kilogramo                                                                                                                                                                                                                                                    |
+| L              | Litro                                                                                                                                                                                                                                                        |
+| m              | Metro                                                                                                                                                                                                                                                        |
+| mg/L           | miligramos por litro                                                                                                                                                                                                                                         |
+| N-NH3          | Nitrógeno amoniacal                                                                                                                                                                                                                                          |
+| NMP/100 ml     | Número más probable en 100 ml                                                                                                                                                                                                                                |
+| N-NO2          | Nitrógeno de nitritos                                                                                                                                                                                                                                        |
+| N-NO3          | Nitrógeno de nitratos                                                                                                                                                                                                                                        |
+| Ntot           | Nitrógeno total                                                                                                                                                                                                                                              |
+| oC             | Grados centígrados                                                                                                                                                                                                                                           |
+| PAH            | Hidrocarburos aromáticos polinucleares                                                                                                                                                                                                                       |
+| P-PO4          | Fósforo de fosfatos                                                                                                                                                                                                                                          |
+| Ptot           | Fósforo total                                                                                                                                                                                                                                                |
+| ppm            | Partes por millón, en soluciones acuosas diluidas equivale a 1 mg/L                                                                                                                                                                                          |
+| SS             | Sólidos en suspensión                                                                                                                                                                                                                                        |
+| Ton            | Tonelada métrica                                                                                                                                                                                                                                             |
+| Unidades Pt-Co | Unidad de la escala platino-cobalto para el color                                                                                                                                                                                                            |
+| µg/L           | Microgramos por litro                                                                                                                                                                                                                                        |
+| µS/cm          | Microsimiens por centímetro                                                                                                                                                                                                                                  |
 1. OBJETIVOS Y ALCANCE 
-
-1.1. Objetivo General. La presente Norma tiene por objeto proteger, conservar y mejorar la calidad de los cuerpos hídricos nacionales, garantizando la seguridad de su uso y promoviendo el mantenimiento de condicio nes adecuadas para el desarrollo de los ecosistemas aso ciados a los mismos, en cumplimiento con las disposicio nes de la Ley General sobre Medio Ambiente y Recursos Naturales (Ley 64-00). 
-
-1.2. Objetivos Específicos. Esta Norma procura los siguientes objetivos específicos: 
-
-1.2.1. Establecer los requisitos que deben cumplir las descargas de residuos líquidos o aguas residuales a los cuerpos receptores nacionales. 
-
-1.2.2. Clasificar las aguas superficiales y las costeras según su utilidad principal. 
-
-1.2.3. Establecer los estándares de calidad que se de sea mantenga o adquiera el cuerpo receptor (o sección del mismo). 
-
-1.2.4. Establecer disposiciones generales sobre el cumplimiento. 
-
-9
-
-SECRETARÍA DE ESTADO DE MEDIO AMBIENTE Y RECURSOS NATURALES
-
-1.3. Alcance. Los requerimientos contenidos en esta Norma son de observancia obligatoria en todo el territo rio nacional. Los mismos se aplicarán a todas las personas físicas o jurídicas (tanto públicas como privadas) respon sables de descargas de aguas residuales o residuos líqui dos generados por actividades industriales, comerciales, agropecuarias, de servicios, domésticos, municipales, re creativas y de cualquier otro tipo. 
+	1. Objetivo General. La presente Norma tiene por objeto proteger, conservar y mejorar la calidad de los cuerpos hídricos nacionales, garantizando la seguridad de su uso y promoviendo el mantenimiento de condiciones adecuadas para el desarrollo de los ecosistemas aso ciados a los mismos, en cumplimiento con las disposiciones de la Ley General sobre Medio Ambiente y Recursos Naturales (Ley 64-00). 
+	2. Objetivos Específicos. Esta Norma procura los siguientes objetivos específicos: 
+		1. Establecer los requisitos que deben cumplir las descargas de residuos líquidos o aguas residuales a los cuerpos receptores nacionales. 
+		2. Clasificar las aguas superficiales y las costeras según su utilidad principal. 
+		3. Establecer los estándares de calidad que se de sea mantenga o adquiera el cuerpo receptor (o sección del mismo). 
+		4. Establecer disposiciones generales sobre el cumplimiento. 
+	3. Alcance. Los requerimientos contenidos en esta Norma son de observancia obligatoria en todo el territorio nacional. Los mismos se aplicarán a todas las personas físicas o jurídicas (tanto públicas como privadas) respon sables de descargas de aguas residuales o residuos líqui dos generados por actividades industriales, comerciales, agropecuarias, de servicios, domésticos, municipales, re creativas y de cualquier otro tipo. 
 
 2. DEFINICIONES 
+	1. 2.1. Acuífero: formación geológica, o grupo de for maciones, o parte de una formación, capaz de acumular una significativa cantidad de agua subterránea, la cual puede brotar, o se puede extraer para consumo. 
+	2. 2.2. Agua Residual: agua cuya composición y cali dad original han sido afectadas como resultado de su uti lización. En función de su origen, se definen como la combinación de los residuos líquidos, o aguas portadoras de residuos, procedentes tanto de residencias como de instituciones públicas y privadas, establecimientos indus triales y comerciales, a los que puede agregarse, eventual mente, aguas subterráneas, superficiales y pluviales. 
+	3. 2.3. Agua Subterránea: agua existente debajo de la superficie terrestre en una zona de saturación, donde los espacios vacíos del suelo o las rocas están llenos de agua. Es un recurso natural que se usa como fuente de agua potable, para recreación, uso industrial y cultivos agrícolas.
+	4. 2.4. Agua Superficial: agua que fluye o se almacena sobre la superficie del terreno, incluye los ríos, lagos, lagunas y embalses. 
+	5. 2.5. Calidad del Agua: relación de parámetros físicos, químicos y biológicos que define la composición, grado de alteración, y la utilidad del cuerpo hídrico. 
+	6. 2.6. Capacidad de Asimilación: propiedad del cuerpo receptor de absorber o soportar agentes externos, sin sufrir deterioro tal que afecte su propia regeneración, im pida su renovación natural en plazos y condiciones norma les, o reduzca significativamente sus funciones ecológicas. 
+	7. 2.7. Carga Másica de un Efluente: masa total de contaminante descargado por unidad de tiempo.
+	8. 2.8. Caudal de Control: caudal específico selecciona do en un cuerpo hídrico, para servir de base al control de la contaminación del mismo. Este caudal se escogerá basándose en las condiciones particulares del cuerpo hídrico receptor: su capacidad de asimilación de contaminan tes, las variaciones de caudal durante el año y las características de la cuenca hidrológica.
+	9. 2.9. Condiciones Naturales: aquellas características físico-químicas y biológicas existentes en algún ecosistema determinado, antes de que agentes antrópicos alteren su equilibrio natural.
+	10. 2.10. Coliformes fecales: parte del grupo de los coliformes asociados a la flora intestinal de los animales de sangre caliente, usados como indicador de la presencia potencial de organismos patógenos. Comprende todos los bacilos Gram negativos, aerobios o anaerobios facul tativos, no esporulados, que: 
+		1. a) En la técnica de filtración por membrana, produz can colonias de color azul dentro de 24 ± 2 h, cuan do se incuban en un medio m-FC a 44.5 ± 0.2º C; y/o 
+		2. b) En la técnica de tubos múltiples, fermenten la lac tosa con producción de gas a 44.5 ± 0.2º C dentro de 24 ± 2 h. 
+	11. 2.11. Coliformes Totales: conjunto de todos los coli formes, comprende todos los bacilos Gram negativos, ae robios o anaerobios facultativos, no esporulados, que: 
+		1. a) En la técnica de filtración por membrana, produz can colonias con un brillo verde dorado metálico dentro de las 24 ± 2 h de incubación, a 35 ± 0.5ºC, en medio m-Endo; y/o 
+		2. b) En la técnica de tubos múltiples, fermenten la lac tosa con producción de gas a 35 ± 0.5ºC dentro de 48 h. 
+	12. 2.12. Contacto Primario: cualquier actividad, recrea tiva o no, en el agua, que conlleva a un contacto prolon gado con el medio líquido y por tanto, expone a los indi viduos a una ingestión de éste en cantidades suficientes que pueden perjudicar la salud si el agua contiene pató genos. Generalmente, incluye la inmersión completa de órganos sensibles -ojos, nariz y oídos- en el agua.
+	13. 2.13. Contacto Secundario: actividades acuáticas en las que el contacto con el agua es indirecto y los órganos sensibles como la nariz, ojos y oídos no son inmersos en el agua.
+	14. 2.14. Contaminación del Agua: acción y/o efecto de introducir en el agua, elementos, compuestos, materiales o formas de energía, que alteran la calidad de ésta para usos posteriores, que incluyen el uso humano y la fun ción ecológica. La contaminación del agua altera sus pro piedades físico-químicas y biológicas de forma que pue de producir daño directo o indirecto a los seres humanos y al medio ambiente.
+	15. 2.15. Cuerpo Receptor: toda masa de agua, corrien te o no, natural o artificial, superficial o subterránea (ma res, ríos, arroyos, lagunas, lagos, embalses, acuíferos) sus ceptible a recibir directa o indirectamente vertidos o des cargas de aguas residuales.
+	16. 2.16. Demanda Bioquímica de Oxígeno (DBO): me dida indirecta del contenido de materia orgánica biode gradable, expresada mediante la cantidad de oxígeno ne cesaria para oxidar biológicamente la materia orgánica en una muestra de agua, a una temperatura estandarizada de 20°C. Si la medición se realiza al quinto día, el valor se conoce como DBO5. Sus unidades son miligramos de oxí geno disuelto por litro (mg O2/L).
+	17. 2.17. Demanda Química de Oxígeno (DQO). medi da indirecta del contenido de materia orgánica e inorgá nica oxidable, mediante el uso de un fuerte oxidante en una muestra de agua. Sus unidades son miligramos de oxígeno disuelto por litro (mg O2/L).
+	18. 2.18. Descarga o Vertido: acción de descargar o ver ter aguas residuales a los cuerpos hídricos receptores o a sistemas de alcantarillado.
+	19. 2.19. Estuario: parte de la desembocadura de una corriente de agua en el mar en la cual el agua dulce entra en contacto con ésta y donde el efecto de flujo y reflujo de la marea es perceptible.
+	20. **2.20. Eutrofización:** desequilibrio de un ecosistema (en su mayoría lagos, embalses y ríos de baja renovación) por la presencia excesiva de nutrientes disueltos (p.e. fósforo y nitrógeno), cuya consecuencia inicial es una mayor productividad primaria, que más tarde termina con la muerte del ecosistema por la falta de oxígeno disuelto.
+	21. **2.21. Fuente:** cualquier actividad o facilidad (estructura, edificio, embarcación) que pueda generar o esté generando descargas de contaminantes vertidos directa o indirectamente al medio ambiente. Las mismas se divi den en puntuales y no-puntuales o dispersas. 
 
-2.1. Acuífero: formación geológica, o grupo de for maciones, o parte de una formación, capaz de acumular una significativa cantidad de agua subterránea, la cual puede brotar, o se puede extraer para consumo. 
+**Fuente Puntual:** cualquier fuente discernible, confinada y discreta de la cual se descargan o pueden descargar contaminantes, incluyendo, pero no limitado a las siguientes: tubería, zanja, canal, túnel, trinchera, conducto, pozo, fisura o grieta discreta, recipiente, equipo, vehículo, operación de animales en una ubicación específica o embarcación.
 
-2.2. Agua Residual: agua cuya composición y cali dad original han sido afectadas como resultado de su uti lización. En función de su origen, se definen como la combinación de los residuos líquidos, o aguas portadoras de residuos, procedentes tanto de residencias como de instituciones públicas y privadas, establecimientos indus triales y comerciales, a los que puede agregarse, eventual mente, aguas subterráneas, superficiales y pluviales. 
+Fuente No-Puntual: cualquier tipo de contaminación que no provenga de una fuente puntual, también conocida como fuente dispersa. Ejemplos de este tipo de contaminación son las escorrentías de aguas provenien tes de zonas agrícolas, operaciones mineras y áreas de construcción. 
 
-2.3. Agua Subterránea: agua existente debajo de la superficie terrestre en una zona de saturación, donde los espacios vacíos del suelo o las rocas están llenos de agua. Es un recurso natural que se usa como fuente de agua po table, para recreación, uso industrial y cultivos agrícolas. 
+22. 2.22. Humedales: extensión de marismas, pantanos y turberas, o superficies cubiertas de agua de forma tempo ral o permanente con baja profundidad, ya sean estas na turales o artificiales, permanentes o temporales, estanca das o corrientes, dulces, salobres o saladas.
+23. 2.23. Oxígeno Disuelto (OD): es la cantidad de oxí geno gaseoso, en forma de O2, disuelto en una solución acuosa. Su concentración es inversamente proporcional a la temperatura del agua. Puede expresarse en miligramos por litro, o porcentualmente, en función de la concentra ción de saturación del agua a la temperatura medida.
+24. 2.24. Sistema de Alcantarillado: conjunto de redes de tuberías que transportan las aguas residuales (alcan tarillado sanitario) o de escorrentía (alcantarillado plu vial) hacia facilidades de tratamiento y/o de descarga hacia cuerpos receptores. Los sistemas combinados, es decir aquellos que transportan ambos tipos de agua, no son recomendables desde el punto de vista ambiental y han sido prohibidos por esta Norma. 
 
-10 
-
-NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS 
-
-2.4. Agua Superficial: agua que fluye o se almacena sobre la superficie del terreno, incluye los ríos, lagos, la gunas y embalses. 
-
-2.5. Calidad del Agua: relación de parámetros físi cos, químicos y biológicos que define la composición, grado de alteración, y la utilidad del cuerpo hídrico. 
-
-2.6. Capacidad de Asimilación: propiedad del cuer po receptor de absorber o soportar agentes externos, sin sufrir deterioro tal que afecte su propia regeneración, im pida su renovación natural en plazos y condiciones norma les, o reduzca significativamente sus funciones ecológicas. 
-
-2.7. Carga Másica de un Efluente: masa total de contaminante descargado por unidad de tiempo. 
-
-2.8. Caudal de Control: caudal específico selecciona do en un cuerpo hídrico, para servir de base al control de la contaminación del mismo. Este caudal se escogerá ba sándose en las condiciones particulares del cuerpo hídri co receptor: su capacidad de asimilación de contaminan tes, las variaciones de caudal durante el año y las caracte rísticas de la cuenca hidrológica. 
-
-2.9. Condiciones Naturales: aquellas características físico-químicas y biológicas existentes en algún ecosiste ma determinado, antes de que agentes antrópicos alteren su equilibrio natural. 
-
-2.10. Coliformes fecales: parte del grupo de los co liformes asociados a la flora intestinal de los animales de 
-
-11
-
-SECRETARÍA DE ESTADO DE MEDIO AMBIENTE Y RECURSOS NATURALES
-
-sangre caliente, usados como indicador de la presencia potencial de organismos patógenos. Comprende todos los bacilos Gram negativos, aerobios o anaerobios facul tativos, no esporulados, que:  
-
-a) En la técnica de filtración por membrana, produz can colonias de color azul dentro de 24 ± 2 h, cuan do se incuban en un medio m-FC a 44.5 ± 0.2º C; y/o  
-
-b) En la técnica de tubos múltiples, fermenten la lac tosa con producción de gas a 44.5 ± 0.2º C dentro de 24 ± 2 h. 
-
-2.11. Coliformes Totales: conjunto de todos los coli formes, comprende todos los bacilos Gram negativos, ae robios o anaerobios facultativos, no esporulados, que:  
-
-a) En la técnica de filtración por membrana, produz can colonias con un brillo verde dorado metálico dentro de las 24 ± 2 h de incubación, a 35 ± 0.5ºC, en medio m-Endo; y/o  
-
-b) En la técnica de tubos múltiples, fermenten la lac tosa con producción de gas a 35 ± 0.5ºC dentro de 48 h. 
-
-2.12. Contacto Primario: cualquier actividad, recrea tiva o no, en el agua, que conlleva a un contacto prolon gado con el medio líquido y por tanto, expone a los indi viduos a una ingestión de éste en cantidades suficientes que pueden perjudicar la salud si el agua contiene pató genos. Generalmente, incluye la inmersión completa de órganos sensibles -ojos, nariz y oídos- en el agua. 
-
-12 
-
-NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS 
-
-2.13. Contacto Secundario: actividades acuáticas en las que el contacto con el agua es indirecto y los órganos sensibles como la nariz, ojos y oídos no son inmersos en el agua. 
-
-2.14. Contaminación del Agua: acción y/o efecto de introducir en el agua, elementos, compuestos, materiales o formas de energía, que alteran la calidad de ésta para usos posteriores, que incluyen el uso humano y la fun ción ecológica. La contaminación del agua altera sus pro piedades físico-químicas y biológicas de forma que pue de producir daño directo o indirecto a los seres humanos y al medio ambiente. 
-
-2.15. Cuerpo Receptor: toda masa de agua, corrien te o no, natural o artificial, superficial o subterránea (ma res, ríos, arroyos, lagunas, lagos, embalses, acuíferos) sus ceptible a recibir directa o indirectamente vertidos o des cargas de aguas residuales. 
-
-2.16. Demanda Bioquímica de Oxígeno (DBO): me dida indirecta del contenido de materia orgánica biode gradable, expresada mediante la cantidad de oxígeno ne cesaria para oxidar biológicamente la materia orgánica en una muestra de agua, a una temperatura estandarizada de 20°C. Si la medición se realiza al quinto día, el valor se conoce como DBO5. Sus unidades son miligramos de oxí geno disuelto por litro (mg O2/L). 
-
-2.17. Demanda Química de Oxígeno (DQO). medi da indirecta del contenido de materia orgánica e inorgá nica oxidable, mediante el uso de un fuerte oxidante en 
-
-13
-
-SECRETARÍA DE ESTADO DE MEDIO AMBIENTE Y RECURSOS NATURALES
-
-una muestra de agua. Sus unidades son miligramos de oxígeno disuelto por litro (mg O2/L).  
-
-2.18. Descarga o Vertido: acción de descargar o ver ter aguas residuales a los cuerpos hídricos receptores o a sistemas de alcantarillado. 
-
-2.19. Estuario: parte de la desembocadura de una co rriente de agua en el mar en la cual el agua dulce entra en contacto con ésta y donde el efecto de flujo y reflujo de la marea es perceptible. 
-
-2.20. Eutrofización: desequilibrio de un ecosistema (en su mayoría lagos, embalses y ríos de baja renovación) por la presencia excesiva de nutrientes disueltos (p.e. fós foro y nitrógeno), cuya consecuencia inicial es una mayor productividad primaria, que más tarde termina con la muerte del ecosistema por la falta de oxígeno disuelto. 
-
-2.21. Fuente: cualquier actividad o facilidad (estruc tura, edificio, embarcación) que pueda generar o esté ge nerando descargas de contaminantes vertidos directa o indirectamente al medio ambiente. Las mismas se divi den en puntuales y no-puntuales o dispersas. 
-
-Fuente Puntual: cualquier fuente discernible, confi nada y discreta de la cual se descargan o pueden descar gar contaminantes, incluyendo, pero no limitado a las si guientes: tubería, zanja, canal, túnel, trinchera, conducto, pozo, fisura o grieta discreta, recipiente, equipo, vehícu lo, operación de animales en una ubicación específica o embarcación. 
-
-14 
-
-NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS 
-
-Fuente No-Puntual: cualquier tipo de contamina ción que no provenga de una fuente puntual, también conocida como fuente dispersa. Ejemplos de este tipo de contaminación son las escorrentías de aguas provenien tes de zonas agrícolas, operaciones mineras y áreas de construcción. 
-
-2.22. Humedales: extensión de marismas, pantanos y turberas, o superficies cubiertas de agua de forma tempo ral o permanente con baja profundidad, ya sean estas na turales o artificiales, permanentes o temporales, estanca das o corrientes, dulces, salobres o saladas.  
-
-2.23. Oxígeno Disuelto (OD): es la cantidad de oxí geno gaseoso, en forma de O2, disuelto en una solución acuosa. Su concentración es inversamente proporcional a la temperatura del agua. Puede expresarse en miligramos por litro, o porcentualmente, en función de la concentra ción de saturación del agua a la temperatura medida. 
-
-2.24. Sistema de Alcantarillado: conjunto de redes de tuberías que transportan las aguas residuales (alcan tarillado sanitario) o de escorrentía (alcantarillado plu vial) hacia facilidades de tratamiento y/o de descarga hacia cuerpos receptores. Los sistemas combinados, es decir aquellos que transportan ambos tipos de agua, no son recomendables desde el punto de vista ambiental y han sido prohibidos por esta Norma. 
-
-15
-
-SECRETARÍA DE ESTADO DE MEDIO AMBIENTE Y RECURSOS NATURALES
+---
 
 3. ESTÁNDARES DE CALIDAD DE CUERPOS HÍDRICOS 
+	1. 3.1. Clasificación de los Cuerpos Hídricos.
+		1. 3.1.1. La Secretaría de Estado de Estado de Medio Ambiente y Recursos Naturales clasificará los cuerpos re ceptores de agua (o segmentos de los mismos) de acuer do al uso actual o potencial de sus aguas, a los fines de restaurar y mantener las características físico-químicas y, además, para mantener o mejorar la integridad biológica de los mismos.
+		2. 3.1.2. La clasificación de los cuerpos hídricos recepto res servirá de base para la definición de las estrategias a seguir para el mantenimiento y/o mejoramiento de di chos cuerpos hídricos, así como planificar y ordenar el surgimiento de nuevas industrias o la ampliación de las existentes. Esta planificación estará basada en las cargas contaminantes descargadas por las industrias y los nive les de contaminación presentes en los cuerpos hídricos.
+		3. 3.1.3. Los cuerpos hídricos receptores de aguas super ficiales y de aguas costeras se clasificarán de la siguiente forma: 
+			1. 3.1.3.1. Aguas superficiales:
+				1. a) CLASE A: aguas destinadas al abastecimiento pú blico de agua potable sin necesidad de tratamiento previo, excepto simple desinfección. Aguas desti nadas para el riego de vegetales de consumo crudo, y para usos de recreo con contacto directo (ej. natación). Aguas destinadas a la preservación de la fau na y la flora. 
+				2. b) CLASE B: aguas destinadas al abastecimiento pú blico de agua potable con tratamiento. Aguas apro vechables para regadío de cultivos, deportes acuá ticos sin contacto directo, y usos industriales y pe cuarios.
+				3. c) CLASE C: aguas utilizadas para navegación, enfria miento, y otros usos que no impliquen contacto directo.
+				4. d) CLASE D-1: aguas superficiales a preservar en con diciones naturales, por su excepcional calidad o gran valor ecológico. 
+			2. 3.1.3.2. Aguas costeras: 
+				1. a) CLASE D-2: aguas costeras y estuarinas a preservar en condiciones naturales, por su excepcional cali dad o gran valor ecológico. Su delimitación física y geográfica se extenderá 500 m mar adentro de su ubicación.
+				2. b) CLASE E: aguas costeras destinadas a la conserva ción de recursos naturales como mangles y zonas de reproducción y nutrición de organismos mari nos y áreas para acuacultura marina, incluyendo moluscos, camarones, peces y pesca comercial. Además, destinadas a actividades de deportes acuáticos y otras de contacto directo con el agua, como natación, buceo, esquí acuático y otros.
+				3. c) CLASE F: aguas costeras destinadas a deportes acuáticos y otras actividades que no conllevan con tacto directo con el agua.
+				4. d) CLASE G: aguas costeras destinadas a actividades industriales, portuarias y de transporte naviero. 
+	2. 3.2. Parámetros de Calidad del Agua por Clase. En la Tabla 3.1 se establecen los parámetros de calidad por clase.
+		1. 3.2.1. En el caso de que estos estándares de calidad de agua sean excedidos por la concentración del cuerpo de agua bajo condiciones naturales, el estándar aplicable será la concentración natural de este.
+		2. 3.2.2. En el caso de que al momento de realizar la clasificación de un cuerpo de agua o sección del mismo, se encuentre que sus condiciones superan los estándares establecidos para la clase correspondiente, la Secretaría de Estado de Medio Ambiente y Recursos Naturales, en coordinación con los organismos competentes, elaborará planes de remediación y descontaminación por cuencas, pudiendo establecer para las actividades que se realizan dentro de la cuenca afectada límites de descarga basados en las cargas másicas de contaminantes que resulten en controles más estrictos que los especificados por esta Norma.
+		3. 3.2.3. La Secretaría de Estado de Medio Ambiente y Recursos Naturales elaborará el mapa inicial de clasificación de los cuerpos hídricos a nivel nacional, en un plazo no mayor de un año, a partir de la emisión de esta Norma.
 
-3.1. Clasificación de los Cuerpos Hídricos. 3.1.1. La Secretaría de Estado de Estado de Medio Ambiente y Recursos Naturales clasificará los cuerpos re ceptores de agua (o segmentos de los mismos) de acuer do al uso actual o potencial de sus aguas, a los fines de restaurar y mantener las características físico-químicas y, además, para mantener o mejorar la integridad biológica de los mismos. 
+Tabla 3.1. Valores máximos aceptables de parámetros físicos, químicos y biológicos presentes en cuerpos hídricos superficiales y en aguas costeras. 
 
-3.1.2. La clasificación de los cuerpos hídricos recepto res servirá de base para la definición de las estrategias a seguir para el mantenimiento y/o mejoramiento de di chos cuerpos hídricos, así como planificar y ordenar el surgimiento de nuevas industrias o la ampliación de las existentes. Esta planificación estará basada en las cargas contaminantes descargadas por las industrias y los nive les de contaminación presentes en los cuerpos hídricos. 
+| PARÁMETRO | UNIDAD | AGUAS SUPERFICIALES                 | AGUAS COSTERAS |
+| --------- | ------ | ----------------------------------- | -------------- |
+|           |        | \| Clase A \| Clase B \| Clase C \| |                |
 
-3.1.3. Los cuerpos hídricos receptores de aguas super ficiales y de aguas costeras se clasificarán de la siguiente forma: 
+<table>
+	<thead>
+		<tr>
+			<th rowspan="2">PARÁMETRO</th>
+			<th rowspan="2">UNIDAD</th>
+			<th colspan="3">AGUAS SUPERFICIALES</th>
+			<th colspan="3">AGUAS COSTERAS</th>
+		</tr>
+		<tr>
+			<th>Clase A</th>
+			<th>Clase B</th>
+			<th>Clase C</th>
+			<th>Clase E</th>
+			<th>Clase F</th>
+			<th>Clase G</th>
+		</tr>
+	</thead>
+	<tr>
+		<td>
+			PARÁMETROS GENERALES
+			Agentes tensioactivos
+			Cloruros
+		</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+ 
 
-3.1.3.1. Aguas superficiales: 
-
-a) CLASE A: aguas destinadas al abastecimiento pú blico de agua potable sin necesidad de tratamiento previo, excepto simple desinfección. Aguas desti nadas para el riego de vegetales de consumo crudo, y para usos de recreo con contacto directo (ej. nata 
-
-16 
-
-NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS 
-
-ción). Aguas destinadas a la preservación de la fau na y la flora. 
-
-b) CLASE B: aguas destinadas al abastecimiento pú blico de agua potable con tratamiento. Aguas apro vechables para regadío de cultivos, deportes acuá ticos sin contacto directo, y usos industriales y pe cuarios. 
-
-c) CLASE C: aguas utilizadas para navegación, enfria miento, y otros usos que no impliquen contacto directo. 
-
-d) CLASE D-1: aguas superficiales a preservar en con diciones naturales, por su excepcional calidad o gran valor ecológico. 
-
-3.1.3.2. Aguas costeras: 
-
-a) CLASE D-2: aguas costeras y estuarinas a preservar en condiciones naturales, por su excepcional cali dad o gran valor ecológico. Su delimitación física y geográfica se extenderá 500 m mar adentro de su ubicación. 
-
-b) CLASE E: aguas costeras destinadas a la conserva ción de recursos naturales como mangles y zonas de reproducción y nutrición de organismos mari nos y áreas para acuacultura marina, incluyendo moluscos, camarones, peces y pesca comercial. Además, destinadas a actividades de deportes acuáticos y otras de contacto directo con el agua, como natación, buceo, esquí acuático y otros.  
-
-17
-
-SECRETARÍA DE ESTADO DE MEDIO AMBIENTE Y RECURSOS NATURALES
-
-c) CLASE F: aguas costeras destinadas a deportes acuáticos y otras actividades que no conllevan con tacto directo con el agua. 
-
-d) CLASE G: aguas costeras destinadas a actividades industriales, portuarias y de transporte naviero.  
-
-3.2. Parámetros de Calidad del Agua por Clase. En la Tabla 3.1 se establecen los parámetros de calidad por clase. 
-
-3.2.1. En el caso de que estos estándares de calidad de agua sean excedidos por la concentración del cuerpo de agua bajo condiciones naturales, el estándar aplicable se rá la concentración natural de este. 
-
-3.2.2. En el caso de que al momento de realizar la cla sificación de un cuerpo de agua o sección del mismo, se en cuentre que sus condiciones superan los estándares esta blecidos para la clase correspondiente, la Secretaría de Es tado de Medio Ambiente y Recursos Naturales, en coordi nación con los organismos competentes, elaborará planes de remediación y descontaminación por cuencas, pudien do establecer para las actividades que se realizan dentro de la cuenca afectada límites de descarga basados en las car gas másicas de contaminantes que resulten en controles más estrictos que los especificados por esta Norma. 
-
-3.2.3. La Secretaría de Estado de Medio Ambiente y Recursos Naturales elaborará el mapa inicial de clasifica ción de los cuerpos hídricos a nivel nacional, en un plazo no mayor de un año, a partir de la emisión de esta Norma. 
-
-18 
-
-NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS 
-
-Tabla 3.1. Valores máximos aceptables de parámetros fí sicos, químicos y biológicos presentes en cuerpos hídri cos superficiales y en aguas costeras.  
-
-PARÁMETRO UNIDAD AGUAS SUPERFICIALES AGUAS COSTERAS Clase A Clase B Clase C Clase E Clase F Clase G 
-
-PARÁMETROS  
-
-GENERALES 
-
-Agentes tensioactivos mg/L 0.15 0.5 2 - - - Cloruros mg/L 250 250 1000 - - - Coliformes fecales NMP/100 ml 400 1000 4,000 400 2000 2000 Coliformes totales NMP/100 ml 1,000 1,000 10,000 1,000 10,000 10,000 
+ mg/L 0.15 0.5 2 - - - Cloruros mg/L 250 250 1000 - - - Coliformes fecales NMP/100 ml 400 1000 4,000 400 2000 2000 Coliformes totales NMP/100 ml 1,000 1,000 10,000 1,000 10,000 10,000 
 
 Color Unidades Pt-Co 15 50 200 CN CN - DBO5 mg/L 2 5 100 - - - Fluoruros mg/L 0.7 1 3 1.5 1.5 - Fósforo PO4-P mg/L - - - 0.4 0.4 - 
 
@@ -346,11 +204,11 @@ NOTAS 
 
 19 
 
-SECRETARÍA DE ESTADO DE MEDIO AMBIENTE Y RECURSOS NATURALES Tabla 3.1 Cont.   
+SECRETARÍA DE ESTADO DE MEDIO AMBIENTE Y RECURSOS NATURALES Tabla 3.1 Cont. 
 
 PARÁMETRO 
 
-UNIDAD AGUAS SUPERFICIALES AGUAS COSTERAS Clase A Clase B Clase C Clase E Clase F Clase G   
+UNIDAD AGUAS SUPERFICIALES AGUAS COSTERAS Clase A Clase B Clase C Clase E Clase F Clase G 
 
 Cobre mg/L 0.2 0.2 2 0.05 0.05 - Cromo hexavalente, Cr6+ mg/L 0.01 0.01 0.1 0.05 0.1 0.1 Cromo total mg/L 0.05 0.05 1 0.1 0.3 0.3 Hierro mg/L 0.3 0.3 3 0.3 0.3 - Litio mg/L 2.5 2.5 
 
@@ -394,7 +252,7 @@ Demeton µg/L 0.1 0.1 - 0.1 0.1 - 
 
 Fentión µg/L 0.4 0.4 - 0.4 0.4 - Malatión µg/L 0.1 0.1 - 0.1 0.1 - Naled µg/L 0.4 0.4 - 0.4 0.4 - Paratión µg/L 0.01 0.01 - ausente ausente - 2,4,5 –TP µg/L 10 10 - ausente ausente - 
 
-SUSTANCIAS  
+SUSTANCIAS 
 
 ORGÁNICAS 
 
@@ -430,7 +288,7 @@ En el Anexo 1, se presentan valores de referencia ge nerales para las descargas 
 
 NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS 
 
-Tabla 4.1.1. Descargas de agua residual municipal en aguas superficiales y el subsuelo.   
+Tabla 4.1.1. Descargas de agua residual municipal en aguas superficiales y el subsuelo. 
 
 POBLACIÓN 
 
@@ -438,35 +296,35 @@ VALORES MÁXIMOS PERMISIBLES 
 
 - MG/L 
 
-(NMP/100 ML)   
+(NMP/100 ML) 
 
 (HAB. EQUIV.) 
 
-pH DBO5 DQO SS N-NH4 N-(NH4+NO3) P-PO4 CI. Res. C.T.   
+pH DBO5 DQO SS N-NH4 N-(NH4+NO3) P-PO4 CI. Res. C.T. 
 
 <5,000 6 - 8.5 50 160 50 - - - 0.05 1000 5,001 - 10,000 6 - 8.5 45 150 45 - - - 0.05 1000 10,001 - 100,000 6 - 8.5 35 130 40 10 18 3 0.05 1000 >100,000 6 - 8.5 35 130 35 10 18 2 0.05 1000 
 
-Nota: La producción de DBO5 de un habitante equivalente es aproximadamente 60 g/hab/d  Demanda biológica de oxígeno (DBO5) Nitrógeno de amonio y nitratos N-(NH4+NO3) Demanda química de oxígeno (DQO) Fósforo de los ortofosfatos (P-PO4) Sólidos en suspensión (SS) Cloro residual (Cl. Res.) 
+Nota: La producción de DBO5 de un habitante equivalente es aproximadamente 60 g/hab/d Demanda biológica de oxígeno (DBO5) Nitrógeno de amonio y nitratos N-(NH4+NO3) Demanda química de oxígeno (DQO) Fósforo de los ortofosfatos (P-PO4) Sólidos en suspensión (SS) Cloro residual (Cl. Res.) 
 
 Nitrógeno del amonio (N-NH4) Coliformes totales (C.T.) 
 
 Tabla 4.1.2. Descargas de agua residual municipal en aguas costeras. 
 
-VALORES MÁXIMOS PERMISIBLES   
+VALORES MÁXIMOS PERMISIBLES 
 
 POBLACIÓN 
 
 - mg/L 
 
-(NMP/100 ml)   
+(NMP/100 ml) 
 
 (HAB. EQUIV.) 
 
-pH DBO5 DQO SS N-NH4 N-(NH4+NO3) P-PO4 CI. Res. C.T.   
+pH DBO5 DQO SS N-NH4 N-(NH4+NO3) P-PO4 CI. Res. C.T. 
 
 <5,000 6 - 8.5 100 400 90 - - - 0.1 1000 5,001 - 10,000 6 - 8.5 100 400 90 - - - 0.05 1000 10,001 - 100,000 6 - 8.5 70 300 75 30 50 8 0.05 1000 >100,000 6 - 8.5 70 300 75 30 50 8 0.05 1000 
 
-Nota: La producción de DBO5 de un habitante equivalente es aproximadamente 60 g/hab/d  Demanda biológica de oxígeno (DBO5) Nitrógeno de amonio y nitratos N-(NH4+NO3) Demanda química de oxígeno (DQO) Fósforo de los ortofosfatos (P-PO4) Sólidos en suspensión (SS) Cloro residual (Cl. Res.) 
+Nota: La producción de DBO5 de un habitante equivalente es aproximadamente 60 g/hab/d Demanda biológica de oxígeno (DBO5) Nitrógeno de amonio y nitratos N-(NH4+NO3) Demanda química de oxígeno (DQO) Fósforo de los ortofosfatos (P-PO4) Sólidos en suspensión (SS) Cloro residual (Cl. Res.) 
 
 Nitrógeno del amonio (N-NH4) Coliformes totales (C.T.)
 
@@ -514,11 +372,11 @@ SECRETARÍA DE ESTADO DE MEDIO AMBIENTE Y RECURSOS NATURALES
 
 NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS 
 
-Tabla 4.2.2. Valores máximos permisibles para descar gas industriales a las aguas superficiales y al subsuelo.   
+Tabla 4.2.2. Valores máximos permisibles para descar gas industriales a las aguas superficiales y al subsuelo. 
 
 TIPO DE INDUSTRIA PARÁMETRO 
 
-PROMEDIO DIARIO (mg/L, excepto pH y cuando se indica expre samente otra unidad)   
+PROMEDIO DIARIO (mg/L, excepto pH y cuando se indica expre samente otra unidad) 
 
 GUÍAS GENERALES pH 6-9 DBO5 50 
 
@@ -592,11 +450,11 @@ SECRETARÍA DE ESTADO DE MEDIO AMBIENTE Y RECURSOS NATURALES 
 
 Tabla 4.2.2. Cont.
 
-PROMEDIO DIARIO   
+PROMEDIO DIARIO 
 
 TIPO DE INDUSTRIA PARÁMETRO 
 
-(mg/L, excepto pH y cuando se indica expre samente otra unidad)   
+(mg/L, excepto pH y cuando se indica expre samente otra unidad) 
 
 Ag 0.2 
 
@@ -668,13 +526,13 @@ SST 50 
 
 28 
 
-NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS   
+NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS 
 
 Tabla 4.2.2. Cont.
 
 TIPO DE INDUSTRIA PARÁMETRO 
 
-PROMEDIO DIARIO (mg/L, excepto pH y cuando se indica expre samente otra unidad)   
+PROMEDIO DIARIO (mg/L, excepto pH y cuando se indica expre samente otra unidad) 
 
 Grasas y aceites 10 
 
@@ -718,11 +576,11 @@ Cromo total 0.5 
 
 DESARROLLO DE POZOS pH 6-9 PETROLEROS Y DE GAS EN TIERRA DBO5 50 SST 50 
 
-Grasas y aceites 20 para facilidades  
+Grasas y aceites 20 para facilidades 
 
 produciendo >10,000 ton/día 
 
-40 para facilidades  
+40 para facilidades 
 
 produciendo ≤10,000 ton/día 
 
@@ -746,11 +604,11 @@ SECRETARÍA DE ESTADO DE MEDIO AMBIENTE Y RECURSOS NATURALES 
 
 Tabla 4.2.2. Cont.
 
-PROMEDIO DIARIO   
+PROMEDIO DIARIO 
 
 TIPO DE INDUSTRIA PARÁMETRO 
 
-(mg/L, excepto pH y cuando se indica expre samente otra unidad)   
+(mg/L, excepto pH y cuando se indica expre samente otra unidad) 
 
 Ptot 5,0 
 
@@ -810,13 +668,13 @@ Cu 0.5 
 
 30 
 
-NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS   
+NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS 
 
 Tabla 4.2.2. Cont.
 
 TIPO DE INDUSTRIA PARÁMETRO 
 
-PROMEDIO DIARIO (mg/L, excepto pH y cuando se indica expre samente otra unidad)   
+PROMEDIO DIARIO (mg/L, excepto pH y cuando se indica expre samente otra unidad) 
 
 Fe 3.5 
 
@@ -890,11 +748,11 @@ SECRETARÍA DE ESTADO DE MEDIO AMBIENTE Y RECURSOS NATURALES 
 
 Tabla 4.2.2. Cont.
 
-PROMEDIO DIARIO   
+PROMEDIO DIARIO 
 
 TIPO DE INDUSTRIA PARÁMETRO 
 
-(mg/L, excepto pH y cuando se indica expre samente otra unidad)   
+(mg/L, excepto pH y cuando se indica expre samente otra unidad) 
 
 Cloro residual libre 0.2 
 
@@ -958,15 +816,15 @@ MANUFACTURA DE ELECTRÓNICOS pH 6-9 DBO5 50 
 
 32 
 
-NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS   
+NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS 
 
 Tabla 4.2.2. Cont.
 
 TIPO DE INDUSTRIA PARÁMETRO 
 
-PROMEDIO DIARIO (mg/L, excepto pH y cuando se indica expre samente otra unidad)   
+PROMEDIO DIARIO (mg/L, excepto pH y cuando se indica expre samente otra unidad) 
 
-SST 50 valor máximo,  
+SST 50 valor máximo, 
 
 20 promedio mensual 
 
@@ -1000,7 +858,7 @@ Sn 2.0 
 
 Metales totales 10 
 
-MANUFACTURA FARMACÉUTICA pH 6-9 DBO5 30  
+MANUFACTURA FARMACÉUTICA pH 6-9 DBO5 30 
 
 DQO 150 
 
@@ -1042,11 +900,11 @@ SECRETARÍA DE ESTADO DE MEDIO AMBIENTE Y RECURSOS NATURALES 
 
 Tabla 4.2.2. Cont.
 
-PROMEDIO DIARIO   
+PROMEDIO DIARIO 
 
 TIPO DE INDUSTRIA PARÁMETRO 
 
-(mg/L, excepto pH y cuando se indica expre samente otra unidad)   
+(mg/L, excepto pH y cuando se indica expre samente otra unidad) 
 
 Cr 0.5 
 
@@ -1114,13 +972,13 @@ MANUFACTURA DE PAPEL Y CARTÓN pH 6-9 
 
 34 
 
-NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS   
+NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS 
 
 Tabla 4.2.2. Cont.
 
 TIPO DE INDUSTRIA PARÁMETRO 
 
-PROMEDIO DIARIO (mg/L, excepto pH y cuando se indica expre samente otra unidad)   
+PROMEDIO DIARIO (mg/L, excepto pH y cuando se indica expre samente otra unidad) 
 
 DQO, procesos Kraft y CTMP 300 mg/L y 15 kg/ton 
 
@@ -1150,7 +1008,7 @@ SST 50 
 
 Grasas y aceites 10 
 
-CN- 0.1 libre /0.5 disociable  
+CN- 0.1 libre /0.5 disociable 
 
 en ácidos débiles/ 1.0 total 
 
@@ -1192,11 +1050,11 @@ SECRETARÍA DE ESTADO DE MEDIO AMBIENTE Y RECURSOS NATURALES 
 
 Tabla 4.2.2. Cont.
 
-PROMEDIO DIARIO   
+PROMEDIO DIARIO 
 
 TIPO DE INDUSTRIA PARÁMETRO 
 
-(mg/L, excepto pH y cuando se indica expre samente otra unidad)   
+(mg/L, excepto pH y cuando se indica expre samente otra unidad) 
 
 Cd 0.1 
 
@@ -1216,9 +1074,9 @@ DQO 250 
 
 SST 50 condiciones normales 
 
-20 si hay presencia  
+20 si hay presencia 
 
-significativa de metales  
+significativa de metales 
 
 tóxicos. 
 
@@ -1250,7 +1108,7 @@ Zn 2 
 
 PESTICIDAS, FORMULACIÓN pH 6-9 DQO 150 
 
-SST 20, con un promedio  
+SST 20, con un promedio 
 
 mensual nunca mayor de 50 
 
@@ -1270,13 +1128,13 @@ Ingredientes activos (cada uno) 0.05 
 
 36 
 
-NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS   
+NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS 
 
 Tabla 4.2.2. Cont.
 
 TIPO DE INDUSTRIA PARÁMETRO 
 
-PROMEDIO DIARIO (mg/L, excepto pH y cuando se indica expre samente otra unidad)   
+PROMEDIO DIARIO (mg/L, excepto pH y cuando se indica expre samente otra unidad) 
 
 As 0.1 
 
@@ -1286,7 +1144,7 @@ Cu 0.5 
 
 Hg 0.01 
 
-PESTICIDAS, MANUFACTURA pH 6-9 DBO5 30  
+PESTICIDAS, MANUFACTURA pH 6-9 DBO5 30 
 
 DQO 150 
 
@@ -1350,11 +1208,11 @@ SECRETARÍA DE ESTADO DE MEDIO AMBIENTE Y RECURSOS NATURALES 
 
 Tabla 4.2.2. Cont.
 
-PROMEDIO DIARIO   
+PROMEDIO DIARIO 
 
 TIPO DE INDUSTRIA PARÁMETRO 
 
-(mg/L, excepto pH y cuando se indica expre samente otra unidad)   
+(mg/L, excepto pH y cuando se indica expre samente otra unidad) 
 
 PROCESAMIENTO Y ENVASADO DE pH 6-9 FRUTAS Y VEGETALES (FRESCOS, DBO5 50 CONGELADOS Y EN CONSERVAS), DQO 250 Y CONSERVAS ALIMENTICIAS SST 50 EN GENERAL Grasas y aceites 10 Ntot 10 
 
@@ -1416,11 +1274,11 @@ Pesticidas (cada uno) 0.05 
 
 38 
 
-NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS Tabla 4.2.2. Cont.  
+NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS Tabla 4.2.2. Cont. 
 
 TIPO DE INDUSTRIA 
 
-|   |
+| |
 |---|
 |PARÁMETRO <br><br>Sulfuro|
 |Cr|
@@ -1428,8 +1286,8 @@ TIPO DE INDUSTRIA 
 |Cu|
 |Ni|
 
-  
-  
+ 
+ 
 
 PROMEDIO DIARIO (mg/L, excepto pH y cuando se indica expre samente otra unidad) 
 
@@ -1441,7 +1299,7 @@ PROMEDIO DIARIO (mg/L, excepto pH y cuando se indica expre samente otra unidad)�
 
  0.5 
 
- 0.5   
+ 0.5 
 
 Zn 2 
 
@@ -1495,7 +1353,7 @@ duales (Standard Methods for the Examination of Water and Wastewater), publicado
 
 5.2.11. Cada instalación o proyecto generador de aguas residuales es responsable del seguimiento y control de sus descargas y deberá realizarlo de manera periódica. Deberá mantenerse un registro de los resultados de este monitoreo en un lugar accesible dentro de la instalación. 
 
-5.2.12. El Programa de Manejo y Adecuación Am biental aprobado para cada fuente generadora de des cargas de aguas residuales establecerá el programa de monitoreo que deberá ser llevado a cabo por los respon sables de la instalación o proyecto, incluyendo como mí nimo la duración, frecuencia, tipos de muestras, puntos de muestreo y procedimientos para el aseguramiento de la calidad.  
+5.2.12. El Programa de Manejo y Adecuación Am biental aprobado para cada fuente generadora de des cargas de aguas residuales establecerá el programa de monitoreo que deberá ser llevado a cabo por los respon sables de la instalación o proyecto, incluyendo como mí nimo la duración, frecuencia, tipos de muestras, puntos de muestreo y procedimientos para el aseguramiento de la calidad. 
 
 5.2.13. En casos de descargas accidentales que ocasio nen una situación de emergencia, los responsables de la actividad lo notificarán inmediatamente a esta Secretaría de Estado y se activarán los planes de contingencia co rrespondientes. 
 
@@ -1505,7 +1363,7 @@ duales (Standard Methods for the Examination of Water and Wastewater), publicado
 
 NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS 
 
-pecciones y comprobaciones que sean necesarias para ve rificar el adecuado cumplimiento de las disposiciones contenidas en esta Norma.  
+pecciones y comprobaciones que sean necesarias para ve rificar el adecuado cumplimiento de las disposiciones contenidas en esta Norma. 
 
 5.2.15. Los costos que ocasionen las inspecciones, vi sitas y mediciones correrán a cargo de los responsables de las actividades que generan la contaminación. 
 
@@ -1561,7 +1419,7 @@ Plomo mg/L 0.1 0.2 0.5 0.05 0.1 0.5 Plata mg/L 0.01 0.1 0.1 Selenio mg/L 0.01 0.
 
 Zinc mg/L 1 1 10 1 10 20 
 
-RADIOACTIVIDAD  
+RADIOACTIVIDAD 
 
 Actividad ∝ Bq/L N N 0.1 0.1 0.1 0.1 Actividad β Bq/L N N 0.25 1 1 1 
 
@@ -1573,7 +1431,7 @@ BIOCIDAS 
 
 SECRETARÍA DE ESTADO DE MEDIO AMBIENTE Y RECURSOS NATURALES 
 
-Tabla A.2. Referencia de descargas al subsuelo y alcan tarillado.  
+Tabla A.2. Referencia de descargas al subsuelo y alcan tarillado. 
 
 LÍMITE MÁXIMO VERTIDO 
 
@@ -1593,7 +1451,7 @@ Nitrógeno total mg/L 50 40 NO3-N mg/L 4 - Oxígeno disuelto % sat. 80 - pH - 6.
 
 Sólidos disueltos mg/L 1,200 1,200 Sólidos flotantes - Ausentes ausentes Sólidos sedimentables ml/l 1 - Sólidos suspendidos mg/L 150 400 
 
-Sólidos totales mg/L - 1,700  Sulfatos mg/L 300 400 Sulfuros mg/L 0.05 2 Temperatura oC - 40 ∆ T oC ± 3 - 
+Sólidos totales mg/L - 1,700 Sulfatos mg/L 300 400 Sulfuros mg/L 0.05 2 Temperatura oC - 40 ∆ T oC ± 3 - 
 
 METALES 
 
@@ -1603,11 +1461,11 @@ Cianuro mg/L 0.05 0.2 Cobre mg/L 1 - Cromo total mg/L 0.5 2
 
 46 
 
-NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS   
+NORMA AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS 
 
 PARÁMETRO UNIDAD 
 
-LÍMITE MÁXIMO VERTIDO SUELO ALCANTARILLADO   
+LÍMITE MÁXIMO VERTIDO SUELO ALCANTARILLADO 
 
 Cromo hexavalente mg/L 0.05 - Hierro mg/L 0.5 25 Manganeso mg/L 0.5 10 
 
@@ -1627,7 +1485,7 @@ BIOCIDAS 
 
 47 
 
-SECRETARÍA DE ESTADO DE MEDIO AMBIENTE  Y RECURSOS NATURALES 
+SECRETARÍA DE ESTADO DE MEDIO AMBIENTE Y RECURSOS NATURALES 
 
 NORMAS AMBIENTAL SOBRE CALIDAD DEL AGUA Y CONTROL DE DESCARGAS 
 
