@@ -15,27 +15,46 @@ Para todo lo relativo a las multas o sanciones pecuniarias debe tomarse en cuent
 
 ## DISPOSICIONES PRELIMINARES 
 
-Artículo 1. La infracción que las leyes castigan con penas de policía es una contravención. La infracción que las leyes castigan con penas correccionales, es un delito. La infracción que las leyes castigan con una pena aflictiva o infamante, es un crimen. 
+###### Artículo 1.
 
-Artículo 2. Toda tentativa de crimen podrá ser considerada como el mismo crimen, cuando se manifieste con un principio de ejecución, o cuando el culpable, a pesar de haber hecho cuan to estaba de su parte para consumarlo, no logra su propósito por causas independientes de su voluntad; quedando estas circunstancias sujetas a la apreciación de los jueces. 
+La infracción que las leyes castigan con penas de policía es una contravención. La infracción que las leyes castigan con penas correccionales, es un delito. La infracción que las leyes castigan con una pena aflictiva o infamante, es un crimen. 
 
-Artículo 3. Las tentativas de delito no se reputan delitos, sino en los casos en que una disposición especial de la ley así lo determine. 
+###### Artículo 2.
 
-Artículo 4. Las contravenciones, los delitos y los crímenes que se cometan, no podrán penarse, sino en virtud de una disposi ción de ley promulgada con anterioridad a su comisión. 
+Toda tentativa de crimen podrá ser considerada como el mismo crimen, cuando se manifieste con un principio de ejecución, o cuando el culpable, a pesar de haber hecho cuan to estaba de su parte para consumarlo, no logra su propósito por causas independientes de su voluntad; quedando estas circunstancias sujetas a la apreciación de los jueces. 
 
-Artículo 5. Las disposiciones del presente código no son aplica bles a las contravenciones, delitos o crímenes militares.
+###### Artículo 3.
+
+Las tentativas de delito no se reputan delitos, sino en los casos en que una disposición especial de la ley así lo determine. 
+
+###### Artículo 4.
+
+Las contravenciones, los delitos y los crímenes que se cometan, no podrán penarse, sino en virtud de una disposición de ley promulgada con anterioridad a su comisión. 
+
+###### Artículo 5.
+
+Las disposiciones del presente código no son aplicables a las contravenciones, delitos o crímenes militares.
 
 ## LIBRO PRIMERO: DE LAS PENAS EN MATERIA CRIMINAL Y CORRECCIONAL Y DE SUS EFECTOS 
 
-Artículo 6. Las penas en materia criminal son aflictivas e infamantes; o infamante solamente. 
+###### Artículo 6.
 
-Artículo 7. (Modificado por la Ley 46-99 del 20 de mayo del 1999). Las penas aflictivas e infamantes son: 1ro. La de reclusión mayor; 2do. La detención y 3ro. La reclusión menor. 
+Las penas en materia criminal son aflictivas e infamantes; o infamante solamente. 
 
-Artículo 8. Es pena infamante la degradación cívica. 
+###### Artículo 7.
 
-Artículo 9. Las penas en materia correccional son: 1o., el destierro; 2o., el confinamiento; 3o., la prisión temporal; 4o., la interdicción por determinado tiempo de ciertos derechos cívicos, civiles o de familia; 5o., la multa[^1]. 
+(Modificado por la [[ley-046-99|Ley 46-99]] del 20 de mayo del 1999). Las penas aflictivas e infamantes son: 1ro. La de reclusión mayor; 2do. La detención y 3ro. La reclusión menor. 
 
-Artículo 10. Las penas que pronuncia la ley para los crímenes delitos y contravenciones se impondrán siempre, sin perjuicio de las restituciones y daños y perjuicios que puedan resultar en favor de los agraviados. 
+###### Artículo 8.
+Es pena infamante la degradación cívica. 
+
+###### Artículo 9.
+
+Las penas en materia correccional son: 1o., el destierro; 2o., el confinamiento; 3o., la prisión temporal; 4o., la interdicción por determinado tiempo de ciertos derechos cívicos, civiles o de familia; 5o., la multa[^1]. 
+
+###### Artículo 10.
+
+Las penas que pronuncia la ley para los crímenes delitos y contravenciones se impondrán siempre, sin perjuicio de las restituciones y daños y perjuicios que puedan resultar en favor de los agraviados. 
 
 Artículo 11. Son penas comunes a las materias criminales y correccionales: la sujeción del condenado a la vigilancia de la alta policía, la multa[^2] y la confiscación especial del cuerpo del delito, cuando sea propiedad del condenado, la de las cosas producidas por el delito, y por último, la de aquellas que sirvieron para su comisión o que se destinaron a ese fin. 
 
@@ -51,9 +70,9 @@ Artículo 11. Son penas comunes a las materias criminales y correccionales: la s
 
 Artículo 14. (Derogado por la Ley 64 del 19 de noviembre de 1924 G.O. 3596). 
 
-Artículo 15. (Derogado por la Ley 224 del 26 de junio de 1984). Artículo 16. (Derogado por la Ley 224 del 26 de junio de 1984). 
+Artículo 15. (Derogado por la [[ley-224-84|Ley 224 del 26 de junio de 1984]]). Artículo 16. (Derogado por la [[ley-224-84|Ley 224 del 26 de junio de 1984]]). 
 
-Artículo 17. (Modificado por las Leyes 224 del 26 de junio de 1984 y 46-99 del 20 de mayo del 1999). La condenación a reclusión mayor, lleva consigo la privación de los derechos cívicos y civiles. 
+Artículo 17. (Modificado por las Leyes [[ley-224-84|224 del 26 de junio de 1984]] y [[ley-046-99|46-99 del 20 de mayo del 1999]]). La condenación a reclusión mayor, lleva consigo la privación de los derechos cívicos y civiles. 
 
 Artículo 18. (Modificado por las Leyes 224 del 26 de junio de 1984 y 46-99 del 20 de mayo del 1999). La condenación a reclusión mayor se pronunciará por tres años a los menos y veinte a lo más. 
 
