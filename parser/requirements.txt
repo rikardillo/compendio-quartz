@@ -1,0 +1,15 @@
+# No external dependencies required!
+# This parser uses only Python standard library (3.7+)
+#
+# Standard library modules used:
+# - re (regular expressions)
+# - sys (system operations)
+# - os (operating system interface)
+# - pathlib (path handling)
+# - dataclasses (data structures)
+# - argparse (command-line parsing)
+#
+# To verify your Python version:
+#   python3 --version
+#
+# Should be Python 3.7 or higher
