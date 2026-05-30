@@ -7,10 +7,11 @@
  *   3. Optionally add it to a pipeline in `pipelines`
  */
 
-import { removePageNumbers } from "./cleaners/removePageNumbers.ts"
-import { removeDoubleSpaces } from "./cleaners/removeDoubleSpaces.ts"
-import { normalizeNewlines } from "./cleaners/normalizeNewlines.ts"
-import { convertHeadings } from "./cleaners/convertHeadings.ts"
+import { removePageNumbers } from "./cleaners/removePageNumbers"
+import { removeDoubleSpaces } from "./cleaners/removeDoubleSpaces"
+import { normalizeNewlines } from "./cleaners/normalizeNewlines"
+import { convertHeadings } from "./cleaners/convertHeadings"
+import { removeDotDash } from "./cleaners/removeDotDash"
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -34,6 +35,7 @@ export const cleaners: Record<string, Cleaner> = {
   removeDoubleSpaces,
   normalizeNewlines,
   convertHeadings,
+  removeDotDash,
 }
 
 // ─── Pipelines ────────────────────────────────────────────────────────────────
@@ -44,7 +46,13 @@ export const pipelines: Record<string, Pipeline> = {
     description: "Full cleanup sequence for text pasted from a PDF",
     // Order matters: remove page numbers first so the blank lines they leave
     // behind get caught by normalizeNewlines in the next step.
-    steps: ["removePageNumbers", "removeDoubleSpaces", "normalizeNewlines", "convertHeadings"],
+    steps: [
+      "removePageNumbers",
+      "removeDoubleSpaces",
+      "normalizeNewlines",
+      "convertHeadings",
+      "removeDotDash",
+    ],
   },
   light: {
     name: "light",

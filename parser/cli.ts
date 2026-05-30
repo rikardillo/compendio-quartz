@@ -13,116 +13,112 @@
  *   npx tsx parser/cli.ts --pipeline full --all
  */
 
-import * as p from "@clack/prompts";
-import yargs from "yargs";
-import { hideBin } from "yargs/helpers";
-import { readFileSync, writeFileSync, existsSync } from "fs";
-import { dirname, resolve, relative } from "path";
-import { fileURLToPath } from "url";
-import { globby } from "globby";
-import { cleaners, pipelines } from "./registry.ts";
-import { splitFrontmatter, countChangedLines } from "./utils.ts";
+import * as p from "@clack/prompts"
+import yargs from "yargs"
+import { hideBin } from "yargs/helpers"
+import { readFileSync, writeFileSync, existsSync } from "fs"
+import { dirname, resolve, relative } from "path"
+import { fileURLToPath } from "url"
+import { globby } from "globby"
+import { cleaners, pipelines } from "./registry"
+import { splitFrontmatter, countChangedLines } from "./utils"
 
 // Project root — one level up from parser/
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const ROOT = resolve(__dirname, "..");
+const __dirname = dirname(fileURLToPath(import.meta.url))
+const ROOT = resolve(__dirname, "..")
 
 // ─── Core processing ──────────────────────────────────────────────────────────
 
 function applyCleaners(content: string, cleanerNames: string[]): string {
-  const { frontmatter, body } = splitFrontmatter(content);
-  let cleaned = body;
+  const { frontmatter, body } = splitFrontmatter(content)
+  let cleaned = body
   for (const name of cleanerNames) {
-    const cleaner = cleaners[name];
-    if (!cleaner) throw new Error(`Unknown cleaner: "${name}"`);
-    cleaned = cleaner.run(cleaned);
+    const cleaner = cleaners[name]
+    if (!cleaner) throw new Error(`Unknown cleaner: "${name}"`)
+    cleaned = cleaner.run(cleaned)
   }
-  return frontmatter + cleaned;
+  return frontmatter + cleaned
 }
 
 async function resolveFiles(target: {
-  file?: string;
-  dir?: string;
-  all?: boolean;
-  samples?: boolean;
+  file?: string
+  dir?: string
+  all?: boolean
+  samples?: boolean
 }): Promise<string[]> {
   if (target.file) {
-    const abs = resolve(ROOT, target.file);
-    if (!existsSync(abs)) throw new Error(`File not found: ${target.file}`);
-    return [abs];
+    const abs = resolve(ROOT, target.file)
+    if (!existsSync(abs)) throw new Error(`File not found: ${target.file}`)
+    return [abs]
   }
   if (target.samples) {
-    return globby("parser/samples/**/*.md", { cwd: ROOT, absolute: true });
+    return globby("parser/samples/**/*.md", { cwd: ROOT, absolute: true })
   }
   if (target.dir) {
-    return globby(`${target.dir}/**/*.md`, { cwd: ROOT, absolute: true });
+    return globby(`${target.dir}/**/*.md`, { cwd: ROOT, absolute: true })
   }
   if (target.all) {
-    return globby("content/**/*.md", { cwd: ROOT, absolute: true });
+    return globby("content/**/*.md", { cwd: ROOT, absolute: true })
   }
-  return [];
+  return []
 }
 
-type FileResult = { path: string; changed: boolean; linesDelta: number };
+type FileResult = { path: string; changed: boolean; linesDelta: number }
 
-function processFiles(
-  files: string[],
-  cleanerNames: string[],
-  dryRun: boolean,
-): FileResult[] {
+function processFiles(files: string[], cleanerNames: string[], dryRun: boolean): FileResult[] {
   return files.map((filePath) => {
-    const original = readFileSync(filePath, "utf8");
-    const cleaned = applyCleaners(original, cleanerNames);
-    const changed = original !== cleaned;
-    const linesDelta = countChangedLines(original, cleaned);
+    const original = readFileSync(filePath, "utf8")
+    const cleaned = applyCleaners(original, cleanerNames)
+    const changed = original !== cleaned
+    const linesDelta = countChangedLines(original, cleaned)
 
     if (changed && !dryRun) {
-      writeFileSync(filePath, cleaned, "utf8");
+      writeFileSync(filePath, cleaned, "utf8")
     }
 
-    return { path: filePath, changed, linesDelta };
-  });
+    return { path: filePath, changed, linesDelta }
+  })
 }
 
 // ─── Output helpers ───────────────────────────────────────────────────────────
 
 function printResults(results: FileResult[], dryRun: boolean) {
-  const changed = results.filter((r) => r.changed);
-  const unchanged = results.filter((r) => !r.changed);
+  const changed = results.filter((r) => r.changed)
+  const unchanged = results.filter((r) => !r.changed)
 
   for (const r of changed) {
-    const rel = relative(ROOT, r.path);
-    const action = dryRun ? "would change" : "updated";
-    p.log.success(`${rel}  (${r.linesDelta} line${r.linesDelta === 1 ? "" : "s"} ${action})`);
+    const rel = relative(ROOT, r.path)
+    const action = dryRun ? "would change" : "updated"
+    p.log.success(`${rel}  (${r.linesDelta} line${r.linesDelta === 1 ? "" : "s"} ${action})`)
   }
   for (const r of unchanged) {
-    const rel = relative(ROOT, r.path);
-    p.log.info(`${rel}  — no changes`);
+    const rel = relative(ROOT, r.path)
+    p.log.info(`${rel}  — no changes`)
   }
 
-  const verb = dryRun ? "would be modified" : "updated";
+  const verb = dryRun ? "would be modified" : "updated"
   p.outro(
     `${changed.length} of ${results.length} file(s) ${verb}.` +
       (dryRun ? "  (dry run — nothing was written)" : ""),
-  );
+  )
 }
 
 function printList() {
-  console.log("\nCLEANERS\n");
+  console.log("\nCLEANERS\n")
   for (const c of Object.values(cleaners)) {
-    console.log(`  ${c.name.padEnd(26)}${c.description}`);
+    console.log(`  ${c.name.padEnd(26)}${c.description}`)
   }
-  console.log("\nPIPELINES\n");
+  console.log("\nPIPELINES\n")
   for (const pl of Object.values(pipelines)) {
-    console.log(`  ${pl.name.padEnd(26)}${pl.description}`);
-    console.log(`  ${"".padEnd(26)}steps: ${pl.steps.join(" → ")}\n`);
+    console.log(`  ${pl.name.padEnd(26)}${pl.description}`)
+    console.log(`  ${"".padEnd(26)}steps: ${pl.steps.join(" → ")}\n`)
   }
 }
 
 // ─── Interactive mode ──────────────────────────────────────────────────────────
 
 async function runInteractive() {
-  p.intro("✦ compendio parser");
+  p.intro("✦ compendio parser")
 
   const mode = await p.select({
     message: "What would you like to do?",
@@ -131,15 +127,15 @@ async function runInteractive() {
       { value: "cleaner", label: "Run a single cleaner" },
       { value: "list", label: "List all cleaners and pipelines" },
     ],
-  });
-  if (p.isCancel(mode)) return p.cancel("Cancelled.");
+  })
+  if (p.isCancel(mode)) return p.cancel("Cancelled.")
 
   if (mode === "list") {
-    printList();
-    return;
+    printList()
+    return
   }
 
-  let cleanerNames: string[] = [];
+  let cleanerNames: string[] = []
 
   if (mode === "pipeline") {
     const choice = await p.select({
@@ -149,9 +145,9 @@ async function runInteractive() {
         label: pl.name,
         hint: `${pl.description}  [${pl.steps.join(" → ")}]`,
       })),
-    });
-    if (p.isCancel(choice)) return p.cancel("Cancelled.");
-    cleanerNames = pipelines[choice as string].steps;
+    })
+    if (p.isCancel(choice)) return p.cancel("Cancelled.")
+    cleanerNames = pipelines[choice as string].steps
   } else {
     const choice = await p.select({
       message: "Select a cleaner:",
@@ -160,105 +156,105 @@ async function runInteractive() {
         label: c.name,
         hint: c.description,
       })),
-    });
-    if (p.isCancel(choice)) return p.cancel("Cancelled.");
-    cleanerNames = [choice as string];
+    })
+    if (p.isCancel(choice)) return p.cancel("Cancelled.")
+    cleanerNames = [choice as string]
   }
 
   const targetMode = await p.select({
     message: "Target files:",
     options: [
       { value: "samples", label: "Sample files", hint: "parser/samples/*.md" },
-      { value: "file",    label: "A single file" },
-      { value: "dir",     label: "A directory",  hint: "all .md files, recursive" },
-      { value: "all",     label: "All content files", hint: "content/**/*.md" },
+      { value: "file", label: "A single file" },
+      { value: "dir", label: "A directory", hint: "all .md files, recursive" },
+      { value: "all", label: "All content files", hint: "content/**/*.md" },
     ],
-  });
-  if (p.isCancel(targetMode)) return p.cancel("Cancelled.");
+  })
+  if (p.isCancel(targetMode)) return p.cancel("Cancelled.")
 
-  const target: Parameters<typeof resolveFiles>[0] = {};
+  const target: Parameters<typeof resolveFiles>[0] = {}
 
   if (targetMode === "file") {
     const filePath = await p.text({
       message: "File path (relative to project root):",
       placeholder: "parser/samples/sample-mixed.md",
       validate: (v) => (v.trim() === "" ? "Path required" : undefined),
-    });
-    if (p.isCancel(filePath)) return p.cancel("Cancelled.");
-    target.file = filePath as string;
+    })
+    if (p.isCancel(filePath)) return p.cancel("Cancelled.")
+    target.file = filePath as string
   } else if (targetMode === "dir") {
     const dirPath = await p.text({
       message: "Directory path (relative to project root):",
       placeholder: "content/Leyes/2024",
       validate: (v) => (v.trim() === "" ? "Path required" : undefined),
-    });
-    if (p.isCancel(dirPath)) return p.cancel("Cancelled.");
-    target.dir = dirPath as string;
+    })
+    if (p.isCancel(dirPath)) return p.cancel("Cancelled.")
+    target.dir = dirPath as string
   } else if (targetMode === "all") {
-    target.all = true;
+    target.all = true
   } else {
-    target.samples = true;
+    target.samples = true
   }
 
   const dryRun = await p.confirm({
     message: "Dry run? (preview changes without writing to disk)",
     initialValue: true,
-  });
-  if (p.isCancel(dryRun)) return p.cancel("Cancelled.");
+  })
+  if (p.isCancel(dryRun)) return p.cancel("Cancelled.")
 
-  const files = await resolveFiles(target);
+  const files = await resolveFiles(target)
   if (files.length === 0) {
-    p.log.warn("No .md files found at the specified target.");
-    return;
+    p.log.warn("No .md files found at the specified target.")
+    return
   }
 
-  const s = p.spinner();
-  s.start(`Processing ${files.length} file(s)…`);
-  const results = processFiles(files, cleanerNames, dryRun as boolean);
-  s.stop(`Processed ${files.length} file(s)`);
+  const s = p.spinner()
+  s.start(`Processing ${files.length} file(s)…`)
+  const results = processFiles(files, cleanerNames, dryRun as boolean)
+  s.stop(`Processed ${files.length} file(s)`)
 
-  printResults(results, dryRun as boolean);
+  printResults(results, dryRun as boolean)
 }
 
 // ─── Direct CLI mode ───────────────────────────────────────────────────────────
 
 async function runDirect(argv: {
-  cleaner?: string;
-  pipeline?: string;
-  file?: string;
-  dir?: string;
-  all?: boolean;
-  samples?: boolean;
-  dryRun?: boolean;
-  list?: boolean;
+  cleaner?: string
+  pipeline?: string
+  file?: string
+  dir?: string
+  all?: boolean
+  samples?: boolean
+  dryRun?: boolean
+  list?: boolean
 }) {
-  p.intro("✦ compendio parser");
+  p.intro("✦ compendio parser")
 
   if (argv.list) {
-    printList();
-    return;
+    printList()
+    return
   }
 
-  let cleanerNames: string[] = [];
+  let cleanerNames: string[] = []
 
   if (argv.pipeline) {
-    const pl = pipelines[argv.pipeline];
+    const pl = pipelines[argv.pipeline]
     if (!pl) {
-      p.log.error(`Unknown pipeline: "${argv.pipeline}". Run --list to see options.`);
-      process.exit(1);
+      p.log.error(`Unknown pipeline: "${argv.pipeline}". Run --list to see options.`)
+      process.exit(1)
     }
-    cleanerNames = pl.steps;
-    p.log.info(`Pipeline: ${pl.name}  [${pl.steps.join(" → ")}]`);
+    cleanerNames = pl.steps
+    p.log.info(`Pipeline: ${pl.name}  [${pl.steps.join(" → ")}]`)
   } else if (argv.cleaner) {
     if (!cleaners[argv.cleaner]) {
-      p.log.error(`Unknown cleaner: "${argv.cleaner}". Run --list to see options.`);
-      process.exit(1);
+      p.log.error(`Unknown cleaner: "${argv.cleaner}". Run --list to see options.`)
+      process.exit(1)
     }
-    cleanerNames = [argv.cleaner];
-    p.log.info(`Cleaner: ${argv.cleaner}`);
+    cleanerNames = [argv.cleaner]
+    p.log.info(`Cleaner: ${argv.cleaner}`)
   } else {
-    p.log.error("Provide --cleaner or --pipeline (or run without args for interactive mode).");
-    process.exit(1);
+    p.log.error("Provide --cleaner or --pipeline (or run without args for interactive mode).")
+    process.exit(1)
   }
 
   const target = {
@@ -266,23 +262,23 @@ async function runDirect(argv: {
     dir: argv.dir,
     all: argv.all,
     samples: argv.samples,
-  };
-
-  const files = await resolveFiles(target);
-  if (files.length === 0) {
-    p.log.warn("No .md files found at the specified target.");
-    return;
   }
 
-  const dryRun = argv.dryRun ?? false;
-  if (dryRun) p.log.warn("Dry run — no files will be written.");
+  const files = await resolveFiles(target)
+  if (files.length === 0) {
+    p.log.warn("No .md files found at the specified target.")
+    return
+  }
 
-  const s = p.spinner();
-  s.start(`Processing ${files.length} file(s)…`);
-  const results = processFiles(files, cleanerNames, dryRun);
-  s.stop(`Processed ${files.length} file(s)`);
+  const dryRun = argv.dryRun ?? false
+  if (dryRun) p.log.warn("Dry run — no files will be written.")
 
-  printResults(results, dryRun);
+  const s = p.spinner()
+  s.start(`Processing ${files.length} file(s)…`)
+  const results = processFiles(files, cleanerNames, dryRun)
+  s.stop(`Processed ${files.length} file(s)`)
+
+  printResults(results, dryRun)
 }
 
 // ─── Entry point ──────────────────────────────────────────────────────────────
@@ -290,30 +286,38 @@ async function runDirect(argv: {
 const argv = await yargs(hideBin(process.argv))
   .scriptName("parser")
   .usage("$0 [options]  — run without options for interactive mode")
-  .option("cleaner",   { alias: "c", type: "string",  description: "Run a single cleaner by name" })
-  .option("pipeline",  { alias: "p", type: "string",  description: "Run a named pipeline" })
-  .option("file",      { alias: "f", type: "string",  description: "Target a single file" })
-  .option("dir",       { alias: "d", type: "string",  description: "Target all .md files in a directory (recursive)" })
-  .option("all",       {             type: "boolean", description: "Target all files under content/" })
-  .option("samples",   { alias: "s", type: "boolean", description: "Target sample files in parser/samples/" })
-  .option("dry-run",   {             type: "boolean", description: "Preview changes without writing to disk" })
-  .option("list",      { alias: "l", type: "boolean", description: "List all cleaners and pipelines" })
+  .option("cleaner", { alias: "c", type: "string", description: "Run a single cleaner by name" })
+  .option("pipeline", { alias: "p", type: "string", description: "Run a named pipeline" })
+  .option("file", { alias: "f", type: "string", description: "Target a single file" })
+  .option("dir", {
+    alias: "d",
+    type: "string",
+    description: "Target all .md files in a directory (recursive)",
+  })
+  .option("all", { type: "boolean", description: "Target all files under content/" })
+  .option("samples", {
+    alias: "s",
+    type: "boolean",
+    description: "Target sample files in parser/samples/",
+  })
+  .option("dry-run", { type: "boolean", description: "Preview changes without writing to disk" })
+  .option("list", { alias: "l", type: "boolean", description: "List all cleaners and pipelines" })
   .help()
-  .parseAsync();
+  .parseAsync()
 
-const hasDirectArgs = !!(argv.cleaner || argv.pipeline || argv.list);
+const hasDirectArgs = !!(argv.cleaner || argv.pipeline || argv.list)
 
 if (hasDirectArgs) {
   await runDirect({
-    cleaner:  argv.cleaner,
+    cleaner: argv.cleaner,
     pipeline: argv.pipeline,
-    file:     argv.file,
-    dir:      argv.dir,
-    all:      argv.all,
-    samples:  argv.samples,
-    dryRun:   argv["dry-run"],
-    list:     argv.list,
-  });
+    file: argv.file,
+    dir: argv.dir,
+    all: argv.all,
+    samples: argv.samples,
+    dryRun: argv["dry-run"],
+    list: argv.list,
+  })
 } else {
-  await runInteractive();
+  await runInteractive()
 }
