@@ -12,6 +12,7 @@ import { removeDoubleSpaces } from "./cleaners/removeDoubleSpaces"
 import { normalizeNewlines } from "./cleaners/normalizeNewlines"
 import { convertHeadings } from "./cleaners/convertHeadings"
 import { removeDotDash } from "./cleaners/removeDotDash"
+import { formatArticulosWithTitle, formatArticulosNoTitle } from "./cleaners/formatArticulos"
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -19,6 +20,12 @@ export type Cleaner = {
   name: string
   description: string
   run: (text: string) => string
+  /**
+   * Names of related cleaners to offer as alternatives in per-file
+   * interactive mode.  Used by the CLI to let the user pick a variant
+   * file-by-file without restarting the session.
+   */
+  perFileAlternatives?: string[]
 }
 
 export type Pipeline = {
@@ -36,6 +43,8 @@ export const cleaners: Record<string, Cleaner> = {
   normalizeNewlines,
   convertHeadings,
   removeDotDash,
+  formatArticulosWithTitle,
+  formatArticulosNoTitle,
 }
 
 // ─── Pipelines ────────────────────────────────────────────────────────────────
@@ -52,6 +61,31 @@ export const pipelines: Record<string, Pipeline> = {
       "normalizeNewlines",
       "convertHeadings",
       "removeDotDash",
+    ],
+  },
+  "pdf-import-titled": {
+    name: "pdf-import-titled",
+    description: "PDF import for laws where Artículos carry a title (e.g. Artículo 1. Objeto.)",
+    // formatArticulosWithTitle runs removeDotDash internally and must come
+    // before convertHeadings so artículo lines are already prefixed with #####
+    // when convertHeadings processes the rest of the structural keywords.
+    steps: [
+      "removePageNumbers",
+      "removeDoubleSpaces",
+      "normalizeNewlines",
+      "formatArticulosWithTitle",
+      "convertHeadings",
+    ],
+  },
+  "pdf-import-no-title": {
+    name: "pdf-import-no-title",
+    description: "PDF import for laws where Artículos have no title (e.g. Artículo 5. Body…)",
+    steps: [
+      "removePageNumbers",
+      "removeDoubleSpaces",
+      "normalizeNewlines",
+      "formatArticulosNoTitle",
+      "convertHeadings",
     ],
   },
   light: {

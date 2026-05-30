@@ -63,7 +63,7 @@ async function resolveFiles(target: {
   return []
 }
 
-type FileResult = { path: string; changed: boolean; linesDelta: number }
+type FileResult = { path: string; changed: boolean; linesDelta: number; skipped?: boolean }
 
 function processFiles(files: string[], cleanerNames: string[], dryRun: boolean): FileResult[] {
   return files.map((filePath) => {
@@ -80,25 +80,104 @@ function processFiles(files: string[], cleanerNames: string[], dryRun: boolean):
   })
 }
 
+// ─── Per-file interactive processing ────────────────────────────────────────
+
+/**
+ * Walks through files one by one and asks the user what to do with each.
+ *
+ * When the selected cleaner declares `perFileAlternatives`, those variants
+ * are offered alongside the default so the user can switch mode per file
+ * (e.g. withTitle vs noTitle) without restarting the session.
+ */
+async function processFilesPerFile(
+  files: string[],
+  defaultCleanerNames: string[],
+  dryRun: boolean,
+): Promise<FileResult[]> {
+  const results: FileResult[] = []
+
+  // Alternatives only make sense for a single-cleaner selection.
+  const alternatives =
+    defaultCleanerNames.length === 1
+      ? (cleaners[defaultCleanerNames[0]]?.perFileAlternatives ?? [])
+      : []
+
+  for (let i = 0; i < files.length; i++) {
+    const filePath = files[i]
+    const rel = relative(ROOT, filePath)
+
+    const actionOptions: Array<{ value: string; label: string; hint?: string }> = [
+      {
+        value: "main",
+        label: "Apply",
+        hint: defaultCleanerNames.join(" → "),
+      },
+      ...alternatives.map((altName) => ({
+        value: altName,
+        label: `Apply: ${cleaners[altName]?.description ?? altName}`,
+      })),
+      { value: "skip", label: "Skip" },
+    ]
+
+    const action = await p.select({
+      message: `[${i + 1}/${files.length}]  ${rel}`,
+      options: actionOptions,
+    })
+
+    if (p.isCancel(action)) {
+      p.cancel("Cancelled.")
+      process.exit(0)
+    }
+
+    if (action === "skip") {
+      results.push({ path: filePath, changed: false, linesDelta: 0, skipped: true })
+      p.log.warn(`skipped  ${rel}`)
+      continue
+    }
+
+    const selectedCleanerNames = action === "main" ? defaultCleanerNames : [action as string]
+
+    const [result] = processFiles([filePath], selectedCleanerNames, dryRun)
+    results.push(result)
+
+    const verb = dryRun ? "would change" : "updated"
+    if (result.changed) {
+      p.log.success(
+        `${rel}  (${result.linesDelta} line${result.linesDelta === 1 ? "" : "s"} ${verb})`,
+      )
+    } else {
+      p.log.info(`${rel}  — no changes`)
+    }
+  }
+
+  return results
+}
+
 // ─── Output helpers ───────────────────────────────────────────────────────────
 
 function printResults(results: FileResult[], dryRun: boolean) {
   const changed = results.filter((r) => r.changed)
-  const unchanged = results.filter((r) => !r.changed)
+  const skipped = results.filter((r) => r.skipped)
+  const unchanged = results.filter((r) => !r.changed && !r.skipped)
 
-  for (const r of changed) {
-    const rel = relative(ROOT, r.path)
-    const action = dryRun ? "would change" : "updated"
-    p.log.success(`${rel}  (${r.linesDelta} line${r.linesDelta === 1 ? "" : "s"} ${action})`)
-  }
-  for (const r of unchanged) {
-    const rel = relative(ROOT, r.path)
-    p.log.info(`${rel}  — no changes`)
+  // In per-file mode results are logged live; only log for bulk mode
+  // (i.e. when none have already been individually reported).
+  if (!results.some((r) => r.skipped)) {
+    for (const r of changed) {
+      const rel = relative(ROOT, r.path)
+      const action = dryRun ? "would change" : "updated"
+      p.log.success(`${rel}  (${r.linesDelta} line${r.linesDelta === 1 ? "" : "s"} ${action})`)
+    }
+    for (const r of unchanged) {
+      const rel = relative(ROOT, r.path)
+      p.log.info(`${rel}  — no changes`)
+    }
   }
 
   const verb = dryRun ? "would be modified" : "updated"
+  const skipNote = skipped.length ? `  ${skipped.length} skipped.` : ""
   p.outro(
-    `${changed.length} of ${results.length} file(s) ${verb}.` +
+    `${changed.length} of ${results.length} file(s) ${verb}.${skipNote}` +
       (dryRun ? "  (dry run — nothing was written)" : ""),
   )
 }
@@ -208,6 +287,27 @@ async function runInteractive() {
     return
   }
 
+  // ── Per-file mode ─────────────────────────────────────────────────────────
+  // Offered whenever more than one file is in scope so the user can decide
+  // what to do with each file individually (e.g. choose between withTitle /
+  // noTitle artículo formatting on a file-by-file basis).
+  if (files.length > 1) {
+    const perFile = await p.confirm({
+      message: `Process ${files.length} files individually?`,
+      active: "Yes, file by file",
+      inactive: "No, apply to all",
+      initialValue: false,
+    })
+    if (p.isCancel(perFile)) return p.cancel("Cancelled.")
+
+    if (perFile) {
+      const results = await processFilesPerFile(files, cleanerNames, dryRun as boolean)
+      printResults(results, dryRun as boolean)
+      return
+    }
+  }
+
+  // ── Bulk mode (original behaviour) ────────────────────────────────────────
   const s = p.spinner()
   s.start(`Processing ${files.length} file(s)…`)
   const results = processFiles(files, cleanerNames, dryRun as boolean)

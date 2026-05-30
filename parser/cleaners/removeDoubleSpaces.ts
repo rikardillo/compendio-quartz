@@ -9,4 +9,4 @@ export const removeDoubleSpaces = {
   name: "removeDoubleSpaces",
   description: "Collapses 2+ consecutive spaces into a single space",
   run: (text: string): string => text.replace(/ {2,}/g, " "),
-};
+}
