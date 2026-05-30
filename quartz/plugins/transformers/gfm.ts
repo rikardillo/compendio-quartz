@@ -28,7 +28,7 @@ export const GitHubFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>> =
           [
             rehypeAutolinkHeadings,
             {
-              behavior: "append",
+              behavior: "wrap",
               properties: {
                 role: "anchor",
                 ariaHidden: true,

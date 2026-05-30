@@ -94,9 +94,13 @@ a {
   &.internal {
     text-decoration: none;
     background-color: var(--highlight);
-    padding: 0 0.1rem;
+    /* padding: 0 0.1rem; */
     border-radius: 5px;
     line-height: 1.4rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Change this number for more/fewer lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 
     &.broken {
       color: var(--secondary);
@@ -378,11 +382,11 @@ h4,
 h5,
 h6 {
   &[id] > a[href^="#"] {
-    margin: 0 0.5rem;
-    opacity: 0;
-    transition: opacity 0.2s ease;
-    transform: translateY(-0.1rem);
-    font-family: var(--codeFont);
+    /* margin: 0 0.5rem; */
+    /* opacity: 0;
+    transition: opacity 0.2s ease; */
+    /* transform: translateY(-0.1rem); */
+    /* font-family: var(--codeFont); */
     user-select: none;
   }
 
@@ -419,7 +423,7 @@ h5,
 h6 {
   font-size: 1rem;
   margin-top: 1.5rem;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 figure[data-rehype-pretty-code-figure] {
