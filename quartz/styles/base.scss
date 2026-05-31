@@ -102,6 +102,11 @@ a {
     -webkit-box-orient: vertical;
     overflow: hidden;
 
+    &.alias {
+      display: inline;
+      padding: 0 0.4rem;
+    }
+
     &.broken {
       color: var(--secondary);
       opacity: 0.5;
