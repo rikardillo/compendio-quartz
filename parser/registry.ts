@@ -13,6 +13,7 @@ import { normalizeNewlines } from "./cleaners/normalizeNewlines"
 import { convertHeadings } from "./cleaners/convertHeadings"
 import { removeDotDash } from "./cleaners/removeDotDash"
 import { formatArticulosWithTitle, formatArticulosNoTitle } from "./cleaners/formatArticulos"
+import { ensureFrontmatter } from "./cleaners/ensureFrontmatter"
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -20,6 +21,13 @@ export type Cleaner = {
   name: string
   description: string
   run: (text: string) => string
+  /**
+   * Optional hook for cleaners that need to read or modify frontmatter.
+   * When present, `applyCleaners` passes the entire file content (frontmatter
+   * + body) and re-splits the result.  Use this instead of `run` whenever the
+   * cleaner must operate on the document as a whole.
+   */
+  runFull?: (content: string) => string
   /**
    * Names of related cleaners to offer as alternatives in per-file
    * interactive mode.  Used by the CLI to let the user pick a variant
@@ -45,6 +53,7 @@ export const cleaners: Record<string, Cleaner> = {
   removeDotDash,
   formatArticulosWithTitle,
   formatArticulosNoTitle,
+  ensureFrontmatter,
 }
 
 // ─── Pipelines ────────────────────────────────────────────────────────────────

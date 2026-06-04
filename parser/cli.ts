@@ -30,12 +30,21 @@ const ROOT = resolve(__dirname, "..")
 // ─── Core processing ──────────────────────────────────────────────────────────
 
 function applyCleaners(content: string, cleanerNames: string[]): string {
-  const { frontmatter, body } = splitFrontmatter(content)
+  let { frontmatter, body } = splitFrontmatter(content)
   let cleaned = body
   for (const name of cleanerNames) {
     const cleaner = cleaners[name]
     if (!cleaner) throw new Error(`Unknown cleaner: "${name}"`)
-    cleaned = cleaner.run(cleaned)
+    if (cleaner.runFull) {
+      // Full-document cleaners receive (and return) the entire file content so
+      // they can read and modify frontmatter.  Re-split after each such step so
+      // subsequent cleaners still see a correct frontmatter / body split.
+      const result = splitFrontmatter(cleaner.runFull(frontmatter + cleaned))
+      frontmatter = result.frontmatter
+      cleaned = result.body
+    } else {
+      cleaned = cleaner.run(cleaned)
+    }
   }
   return frontmatter + cleaned
 }
