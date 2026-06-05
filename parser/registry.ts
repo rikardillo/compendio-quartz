@@ -70,6 +70,7 @@ export const pipelines: Record<string, Pipeline> = {
       "normalizeNewlines",
       "convertHeadings",
       "removeDotDash",
+      "ensureFrontmatter",
     ],
   },
   "pdf-import-titled": {
@@ -84,6 +85,7 @@ export const pipelines: Record<string, Pipeline> = {
       "normalizeNewlines",
       "formatArticulosWithTitle",
       "convertHeadings",
+      "ensureFrontmatter",
     ],
   },
   "pdf-import-no-title": {
@@ -95,6 +97,7 @@ export const pipelines: Record<string, Pipeline> = {
       "normalizeNewlines",
       "formatArticulosNoTitle",
       "convertHeadings",
+      "ensureFrontmatter",
     ],
   },
   light: {
