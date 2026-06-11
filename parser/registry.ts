@@ -15,6 +15,7 @@ import { removeDotDash } from "./cleaners/removeDotDash"
 import { formatArticulosWithTitle, formatArticulosNoTitle } from "./cleaners/formatArticulos"
 import { ensureFrontmatter } from "./cleaners/ensureFrontmatter"
 import { removeExcessUnderscores } from "./cleaners/removeExcessUnderscores"
+import { removeNonBreakingSpaces } from "./cleaners/removeNonBreakingSpaces"
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -56,6 +57,7 @@ export const cleaners: Record<string, Cleaner> = {
   formatArticulosNoTitle,
   ensureFrontmatter,
   removeExcessUnderscores,
+  removeNonBreakingSpaces,
 }
 
 // ─── Pipelines ────────────────────────────────────────────────────────────────
@@ -68,6 +70,7 @@ export const pipelines: Record<string, Pipeline> = {
     // behind get caught by normalizeNewlines in the next step.
     steps: [
       "removeExcessUnderscores",
+      "removeNonBreakingSpaces",
       "removePageNumbers",
       "removeDoubleSpaces",
       "normalizeNewlines",
@@ -84,6 +87,7 @@ export const pipelines: Record<string, Pipeline> = {
     // when convertHeadings processes the rest of the structural keywords.
     steps: [
       "removeExcessUnderscores",
+      "removeNonBreakingSpaces",
       "removePageNumbers",
       "removeDoubleSpaces",
       "normalizeNewlines",
@@ -97,6 +101,7 @@ export const pipelines: Record<string, Pipeline> = {
     description: "PDF import for laws where Artículos have no title (e.g. Artículo 5. Body…)",
     steps: [
       "removeExcessUnderscores",
+      "removeNonBreakingSpaces",
       "removePageNumbers",
       "removeDoubleSpaces",
       "normalizeNewlines",
